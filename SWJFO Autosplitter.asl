@@ -34,7 +34,7 @@ split
     ||
     (current.playerPos > -2600 && current.playerPos < -2540 && current.Bracca == 271 && vars.split == 1)//Bogano 2
     ||
-    (current.playerPos > -28900 && current.playerPos < -28845 && current.Bracca == 525 && vars.split == 2 && settings["NoPBC"])//Zeffo 3
+    (current.playerPos > -29000 && current.playerPos < -28700 && current.playerPos2 > 17400 && current.Bracca == 525 && vars.split == 2 && settings["NoPBC"])//Zeffo 3
     ||
     (current.playerPos > -6660 && current.playerPos < -6500 && current.playerPos2 >-430 && current.Bracca == 1080 && vars.split == 3)//Kashyyyk 4
     ||
