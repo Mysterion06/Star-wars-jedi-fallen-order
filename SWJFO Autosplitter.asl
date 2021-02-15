@@ -17,8 +17,8 @@ init
 
 startup
 {
-    settings.Add("Any%");
-    settings.Add("NoPBC");
+    settings.Add("Any%-PBC");
+    settings.Add("Any%-NoPBC");
 }
 
 start{
@@ -34,7 +34,9 @@ split
     ||
     (current.playerPos > -2600 && current.playerPos < -2540 && current.Bracca == 271 && vars.split == 1)//Bogano 2
     ||
-    (current.playerPos > -29000 && current.playerPos < -28700 && current.playerPos2 > 17400 && current.Bracca == 525 && vars.split == 2 && settings["NoPBC"])//Zeffo 3
+    (current.playerPos > -29000 && current.playerPos < -28700 && current.playerPos2 > 17400 && current.Bracca == 525 && vars.split == 2 && settings["Any%-NoPBC"])//Zeffo 3
+    ||
+    (current.playerPos > -28680 && current.playerPos < -28395 && current.playerPos2 > 17500 && current.playerPos2 < 17800 && current.Bracca == 525 && vars.split == 0&& settings["Any%-PBC"])//Zeffo 3 skip
     ||
     (current.playerPos > -6660 && current.playerPos < -6500 && current.playerPos2 >-430 && current.Bracca == 1080 && vars.split == 3)//Kashyyyk 4
     ||
@@ -65,12 +67,4 @@ isLoading
     }else{
         return false;
     }
-}
-
-
-update{
-    print("Current menuScreen: " + current.menuScreen);
-    print("Current mapBYTE: " + current.mapBYTE);
-    print("Current playerpos" + current.playerPos);
-    print("Current split: " + vars.split);
 }
