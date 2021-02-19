@@ -1,3 +1,4 @@
+//By Mysterion_06_
 state("starwarsjedifallenorder")
 {
     float IGT: 0x0396BAB8, 0x40, 0x334;
@@ -62,7 +63,7 @@ reset
 
 isLoading
 {
-    if(current.map == 2048 && current.playerPos2 > 402 && current.playerPos2 < 404 || current.playerPos2 == 50f && current.Bracca != 337 && current.Bracca != 185){
+    if(current.map == 2048 && current.playerPos2 > 402 && current.playerPos2 < 405 || current.playerPos2 == 50f && current.Bracca != 337 && current.Bracca != 185){
         return true;
     }else{
         return false;
