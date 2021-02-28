@@ -65,9 +65,9 @@ isLoading
 {
     if((current.map == 2048 && current.playerPos2 > 402 && current.playerPos2 < 405 || current.playerPos2 == 50f && current.Bracca != 337 && current.Bracca != 185)
     ||
-    (current.playerPos2 > 10941 && current.playerPos2 < 11251 && current.playerPos > 37330 && current.playerPos < 37623 && current.Bracca != 383 && current.Bracca != 479 && current.Bracca != 270)
+    (current.playerPos2 > 10941 && current.playerPos2 < 11251 && current.playerPos > 37330 && current.playerPos < 37623 && current.Bracca != 383 && current.Bracca != 479 && current.Bracca != 270) //Dathomir
     ||
-    (current.playerPos > -29000 && current.playerPos < -28700 && current.playerPos2 > 17400 && current.Bracca != 525 && current.Bracca != 494 && current.Bracca != 535)){
+    (current.playerPos > -29000 && current.playerPos < -28700 && current.playerPos2 > 17400 && current.Bracca != 525 && current.Bracca != 494 && current.Bracca != 535 && current.Bracca != 529 && current.Bracca != 498)){ //Zeffo
         return true;
     }else{
         return false;
