@@ -35,7 +35,7 @@ split
     ||
     (current.playerPos > -2600 && current.playerPos < -2540 && current.Bracca == 271 && vars.split == 1)//Bogano 2
     ||
-    (current.playerPos > -29000 && current.playerPos < -28700 && current.playerPos2 > 17400 && current.Bracca == 535 && vars.split == 2 && settings["Any%-NoPBC"])//Zeffo 3
+    (current.playerPos > -29000 && current.playerPos < -28700 && current.playerPos2 > 17400 && current.Bracca == 525 && vars.split == 2 && settings["Any%-NoPBC"])//Zeffo 3
     ||
     (current.playerPos > -28680 && current.playerPos < -28395 && current.playerPos2 > 17500 && current.playerPos2 < 17800 && current.Bracca == 525 && vars.split == 2 && settings["Any%"])//Zeffo 3 skip
     ||
