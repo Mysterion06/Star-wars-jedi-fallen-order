@@ -9,6 +9,8 @@ state("starwarsjedifallenorder")
     float playerPos: 0x11B361B0, 0x350, 0x1F0;
     float playerPos2: 0x11B361B0, 0x350, 0x1E0;
     int Bracca: 0x036D8830, 0x8, 0x138, 0x180;
+    byte LRT: 0x036C4D50, 0x8D0, 0x3D8;
+    byte LRT2: 0x36E7200;
 }
 
 init
@@ -35,7 +37,7 @@ split
     ||
     (current.playerPos > -2600 && current.playerPos < -2540 && current.Bracca == 271 && vars.split == 1)//Bogano 2
     ||
-    (current.playerPos > -29000 && current.playerPos < -28700 && current.playerPos2 > 17400 && current.Bracca == 525 && vars.split == 2 && settings["Any%-NoPBC"])//Zeffo 3
+    (current.playerPos > -29000 && current.playerPos < -28700 && current.playerPos2 > 17400 && current.Bracca == 535 && vars.split == 2 && settings["Any%-NoPBC"])//Zeffo 3
     ||
     (current.playerPos > -28680 && current.playerPos < -28395 && current.playerPos2 > 17500 && current.playerPos2 < 17800 && current.Bracca == 525 && vars.split == 2 && settings["Any%"])//Zeffo 3 skip
     ||
@@ -63,13 +65,9 @@ reset
 
 isLoading
 {
-    if((current.map == 2048 && current.playerPos2 > 402 && current.playerPos2 < 405 || current.playerPos2 == 50f && current.Bracca != 337 && current.Bracca != 185)
-    ||
-    (current.playerPos2 > 10941 && current.playerPos2 < 11251 && current.playerPos > 37330 && current.playerPos < 37623 && current.Bracca != 383 && current.Bracca != 479 && current.Bracca != 270) //Dathomir
-    ||
-    (current.playerPos > -29000 && current.playerPos < -28700 && current.playerPos2 > 17400 && current.Bracca != 525 && current.Bracca != 494 && current.Bracca != 535 && current.Bracca != 529 && current.Bracca != 498)){ //Zeffo
+    if(current.LRT2 != 0 && current.LRT == 1){
         return true;
-    }else{
+    } else{
         return false;
     }
 }
