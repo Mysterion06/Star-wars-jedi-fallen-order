@@ -47,7 +47,7 @@ split
     ||
     (current.playerPos > -2620 && current.playerPos < -2550 && current.Bracca == 267 && vars.split == 5)//Bogano 2 6
     ||
-    (current.playerPos > 8130 && current.playerPos < 8202 && current.playerPos2 > 3970 && current.playerPos2 < 4020 && current.Bracca == 129 && vars.split == 6))//Nur 7
+    (current.playerPos > 8130 && current.playerPos < 8202 && current.playerPos2 > 3970 && current.playerPos2 < 4020 && current.Bracca == 129 && vars.split == 6 && current.mapBYTE == 216))//Nur 7
     { 
         vars.split++;
         return true;
